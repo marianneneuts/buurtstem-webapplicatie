@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left {
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    right: 0;
+    background: rgba(224, 172, 105, .5);
+}
+
+.BuurtstemSignup {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr [form] minmax(240px, 450px) 1fr;
+    grid-template-rows: 1fr [form] 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-signup {
+    padding: 1em;
+    grid-column: form;
+    grid-row: form;
+}
+
+h2 {
+    color: #313639;
+}
+
+.sentence {
+    color: #313639;
+}
+
+.form__field {
+    padding-bottom: 1em;
+}
+
+.form__field label {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.form__field .label__inline {
+    display: inline-block;
+}
+
+.form__field input[type = text], 
+.form__field input[type = password] {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-style: none;
+    border-radius: 1em;
+}
+
+.btn-registreren {
+    background-image: linear-gradient(#A9DB23, #82A81B);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 1em;
+}
+
+.login {
+    color: #313639;
+}
+
+.login a:active {
+    color: #313639;
+}
+
+.login a:visited {
+    color: #313639;
+}
