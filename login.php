@@ -2,12 +2,17 @@
     include_once('core/autoload.php');
     session_start();
 
+    if(isset($_SESSION["loggedIn"])) {
+        header("Location: index.php");   
+    }
+
     if(isset($_POST["login"])) {
         $email = $_POST["email"];
         $password = $_POST["password"];
 
         if(User::login($email, $password)) {
             $_SESSION['email'] = $email;
+            $_SESSION['loggedIn'] = true;
             $_SESSION["userId"] = User::getUserIdByEmail($email);
 
             header("Location: forum.php");
