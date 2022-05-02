@@ -1,4 +1,23 @@
-<!DOCTYPE html>
+<?php
+    include_once('core/autoload.php');
+    session_start();
+
+    if(isset($_POST["login"])) {
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+
+        if(User::login($email, $password)) {
+            $_SESSION['email'] = $email;
+            $_SESSION["userId"] = User::getUserIdByEmail($email);
+
+            header("Location: forum.php");
+		}
+        else {
+            $error = "Your email or password is incorrect.";
+        }
+    }
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,7 +61,7 @@
 
                     <!-- btn -->
                     <div class="form__field">
-                        <input type="submit" value="Aanmelden" class="btn-aanmelden">
+                        <input type="submit" name="login" value="Aanmelden" class="btn-aanmelden">
                     </div>
 
                     <!-- signup -->

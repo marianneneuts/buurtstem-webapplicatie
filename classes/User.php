@@ -171,4 +171,35 @@
             $result = $statement->execute();
             return $result;
         }
+
+        // login
+        public static function login($email, $password) {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select * from users where email = :email");
+            $statement->bindValue(":email", $email);
+            $statement->execute();
+            $user = $statement->fetch();
+            $hash = $user['password'];
+
+            if(!$user) {
+                return false;
+            }
+            
+            if(password_verify($password, $hash)) {
+                return true;
+            } 
+            else {
+                return false;
+            }
+        }
+
+        // get the user id based on the email
+        public static function getUserIdByEmail($email) {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select id from users where email = :email");
+            $statement->bindValue(":email", $email);
+            $statement->execute();
+            $result = $statement->fetch();
+            return $result['id'];
+        }
     }
