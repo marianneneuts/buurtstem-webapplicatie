@@ -77,6 +77,8 @@
 
         // password
         public function setPassword($password) {
+            self::checkPassword($password);
+
             $options = [
                 'cost' => 12,
             ];
@@ -87,6 +89,21 @@
 
         public function getPassword() {
             return $this->password;
+        }
+
+        // password check
+        private function checkPassword($password){
+            if($password === "") {
+                throw new Exception("Voer een geldig wachtwoord in.");
+            }
+
+            if(strpos($password, " ")) {
+                throw new Exception("Het wachtwoord mag geen spaties bevatten.");
+            }
+
+            if(strlen($password) <= 5) {
+                throw new Exception("Stel een minimale wachtwoordlengte in van 6 tekens.");
+            }
         }
 
         // streetname
