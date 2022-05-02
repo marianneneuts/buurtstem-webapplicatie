@@ -156,4 +156,19 @@
                 throw new Exception("Voer een geldig plaats in.");
             }
         }
+
+        // signup
+        public function signup() {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("insert into users (firstname, lastname, email, password, streetname, number, place) values (:firstname, :lastname, :email, :password, :streetname, :number, :place)");
+            $statement->bindValue(":firstname", $this->firstname);
+            $statement->bindValue(":lastname", $this->lastname);
+            $statement->bindValue(":email", $this->email);
+            $statement->bindValue(":password", $this->password);
+            $statement->bindValue(":streetname", $this->streetname);
+            $statement->bindValue(":number", $this->number);
+            $statement->bindValue(":place", $this->place);
+            $result = $statement->execute();
+            return $result;
+        }
     }

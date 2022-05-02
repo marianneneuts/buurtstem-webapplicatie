@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php include_once('core/autoload.php'); ?>
+
+<?php
+    if(!empty($_POST)) {
+        try {
+            $user = new User();
+            $user->setFirstname($_POST["firstname"]);
+            $user->setLastname($_POST["lastname"]);
+            $user->setEmail($_POST["email"]);
+            $user->setPassword($_POST["password"]);
+            $user->setStreetname($_POST["streetname"]);
+            $user->setNumber($_POST["number"]);
+            $user->setPlace($_POST["place"]);
+            $user->signup();
+
+            session_start();
+            header("Location: login.php");
+        }
+        catch(Throwable $error) {
+            $error = $error->getMessage();
+        }
+    }
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
