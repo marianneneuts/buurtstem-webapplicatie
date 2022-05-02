@@ -125,11 +125,19 @@
 
         // number
         public function setNumber($number) {
+            self::checkNumber($number);
             $this->number = $number;
         }
 
         public function getNumber() {
             return $this->number;
+        }
+
+        // number check
+        public function checkNumber($number) {
+            if($number === "") {
+                throw new Exception("Voer een geldig huisnummer in.");
+            }
         }
 
         // place
