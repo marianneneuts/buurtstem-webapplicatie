@@ -142,10 +142,18 @@
 
         // place
         public function setPlace($place) {
+            self::checkPlace($place);
             $this->place = $place;
         }
 
         public function getPlace() {
             return $this->place;
+        }
+
+        // place check
+        public function checkPlace($place) {
+            if($place === "") {
+                throw new Exception("Voer een geldig plaats in.");
+            }
         }
     }
