@@ -22,11 +22,19 @@
 
         // firstname
         public function setFirstname($firstname) {
+            self::checkFirstname($firstname);
             $this->firstname = $firstname;
         }
 
         public function getFirstname() {
             return $this->firstname;
+        }
+
+        // firstname check
+        public function checkFirstname($firstname) {
+            if($firstname === "") {
+                throw new Exception("Voer een geldige voornaam in.");
+            }
         }
 
         // lastname
