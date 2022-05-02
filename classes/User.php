@@ -39,11 +39,19 @@
 
         // lastname
         public function setLastname($lastname) {
+            self::checkLastname($lastname);
             $this->lastname = $lastname;
         }
 
         public function getLastname() {
             return $this->lastname;
+        }
+
+        // lastname check
+        public function checkLastname($lastname) {
+            if($lastname === "") {
+                throw new Exception("Voer een geldige achternaam in.");
+            }
         }
 
         // email
