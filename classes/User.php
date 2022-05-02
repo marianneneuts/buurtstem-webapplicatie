@@ -56,11 +56,23 @@
 
         // email
         public function setEmail($email) {
+            self::checkEmail($email);
             $this->email = $email;
         }
 
         public function getEmail() {
             return $this->email;
+        }
+
+        // email check
+        public function checkEmail($email) {
+            if(empty($email)) {
+                throw new Exception("Voer een geldig e-mailadres in.");
+            }
+
+            if(!strpos($email, '@')) {
+                throw new Exception("Voer een geldig e-mailadres in.");
+            }
         }
 
         // password
