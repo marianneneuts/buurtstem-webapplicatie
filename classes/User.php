@@ -108,11 +108,19 @@
 
         // streetname
         public function setStreetname($streetname) {
+            self::checkStreetname($streetname);
             $this->streetname = $streetname;
         }
 
         public function getStreetname() {
             return $this->streetname;
+        }
+
+        // streetname check
+        public function checkStreetname($streetname) {
+            if($streetname === "") {
+                throw new Exception("Voer een geldige straatnaam in.");
+            }
         }
 
         // number
