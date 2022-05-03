@@ -10,7 +10,7 @@
 
         <ul>
             <li>
-                <a href="#" class="profile"><i class="fas fa-user" style="color: #C78743;"></i> Profiel</a>
+                <a href="profile.php" class="profile"><i class="fas fa-user" style="color: #C78743;"></i> Profiel</a>
             </li>
         </ul>
     </div>
@@ -18,15 +18,15 @@
     <!-- side navigation -->
     <div class="sidebar">
         <div class="home">
-            <h2><a href="forum.php">Buurtstem</a></h2>
+            <h2><a href="index.php">Buurtstem</a></h2>
         </div>
 
         <ul>
             <li>
-                <a href="#" class="forum"><i class="fas fa-comments" style="color: #C78743;"></i> Forum</a>
+                <a href="forum.php" class="forum"><i class="fas fa-comments" style="color: #C78743;"></i> Forum</a>
             </li>
             <li>
-                <a href="#" class="groups"><i class="fas fa-users" style="color: #C78743;"></i> Groepen</a>
+                <a href="groups.php" class="groups"><i class="fas fa-users" style="color: #C78743;"></i> Groepen</a>
             </li>
             <li>
                 <a href="#" class="logout"><i class="fas fa-sign-out-alt" style="color: #C78743;"></i> Afmelden</a>
