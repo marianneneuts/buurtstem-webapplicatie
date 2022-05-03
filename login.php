@@ -15,7 +15,7 @@
             $_SESSION['loggedIn'] = true;
             $_SESSION["userId"] = User::getUserIdByEmail($email);
 
-            header("Location: forum.php");
+            header("Location: index.php");
 		}
         else {
             $error = "Your email or password is incorrect.";
