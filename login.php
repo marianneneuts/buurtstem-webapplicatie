@@ -3,7 +3,7 @@
     session_start();
 
     if(isset($_SESSION["loggedIn"])) {
-        header("Location: index.php");   
+        header("Location: buurtstem.php");   
     }
 
     if(isset($_POST["login"])) {
@@ -15,7 +15,7 @@
             $_SESSION['loggedIn'] = true;
             $_SESSION["userId"] = User::getUserIdByEmail($email);
 
-            header("Location: index.php");
+            header("Location: buurtstem.php");
 		}
         else {
             $error = "Your email or password is incorrect.";

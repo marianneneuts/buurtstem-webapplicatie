@@ -18,7 +18,7 @@
     <!-- side navigation -->
     <div class="sidebar">
         <div class="home">
-            <h2><a href="index.php">Buurtstem</a></h2>
+            <h2><a href="buurtstem.php">Buurtstem</a></h2>
         </div>
 
         <ul>
