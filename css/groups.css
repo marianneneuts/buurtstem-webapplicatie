@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    background:white;
+    position: fixed;
+    width: calc(100% - 225px);
+	margin-left: 225px;
+	height: 100%;
+}
+
+.content h2 {
+    color: #313639;
+}
