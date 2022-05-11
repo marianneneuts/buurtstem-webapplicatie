@@ -13,5 +13,14 @@
 <body>
     <?php include_once("nav.inc.php"); ?>
     
+    <div class="content">
+        <h2>De Nieuwe Vesten</h2>
+
+        <br>
+
+        <a href="buurtstem.php">
+            <button>Buurtstem</button>
+        </a>
+    </div>
 </body>
 </html>
