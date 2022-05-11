@@ -1,6 +1,28 @@
 <?php include_once('logged_in.inc.php'); ?>
+<?php include_once('core/autoload.php'); ?>
 
-<!DOCTYPE html>
+<?php
+    if(!empty($_POST)) {
+        try {
+            $topic = new Topic();
+            if(isset($_SESSION['userId'])) {
+                $topic->setUserId($_SESSION['userId']);
+            }
+            else {
+                $topic->setUserId(1);
+            }
+            $topic->setTitle($_POST["title"]);
+            $topic->setDescription($_POST["description"]);
+            $topic->add();
+
+            header("Location: forum.php");
+        }
+        catch(Throwable $error) {
+            $error = $error->getMessage();
+        }
+    }
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,6 +39,14 @@
         <h2>Laat hier je topic achter!</h2>
 
         <form action="" method="post">
+            <!-- errors -->
+            <?php if(isset($error)): ?>
+                <div class="form-error">
+                    <p><strong>Opgepast:</strong></p>
+                    <?php if(isset($error)) { echo $error; }?>
+                </div>
+            <?php endif; ?>
+
             <!-- titel -->
             <div class="form__field">
                 <input type="text" id="titel" name="title" placeholder="Titel">
