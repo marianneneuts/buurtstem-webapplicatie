@@ -45,11 +45,19 @@
 
         // description
         public function setDescription($description) {
+            self::checkDescription($description);
             $this->description = $description;
         }
 
         public function getDescription() {
             return $this->description;
+        }
+
+        // description check
+        public function checkDescription($description) {
+            if(empty($description)) {
+                throw new Exception("Voer een geldige omschrijving in.");
+            }
         }
         
         // date
