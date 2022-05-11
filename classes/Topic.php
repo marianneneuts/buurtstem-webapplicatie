@@ -28,11 +28,19 @@
 
         // title
         public function setTitle($title) {
+            self::checkTitle($title);
             $this->title = $title;
         }
 
         public function getTitle() {
             return $this->title;
+        }
+
+        // title check
+        public function checkTitle($title) {
+            if(empty($title)) {
+                throw new Exception("Voer een geldige titel in.");
+            }
         }
 
         // description
@@ -52,5 +60,15 @@
 
         public function getDate() {
             return $this->date;
+        }
+
+        public function add() {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("insert into topics (userId, title, description, date) values (:userId, :title, :description, :date)");
+            $statement->bindValue(":userId", $this->userId);
+            $statement->bindValue(":title", $this->title);
+            $statement->bindValue(":description", $this->description);
+            $statement->bindValue(":date", $this->date);
+            $statement->execute();
         }
     }
