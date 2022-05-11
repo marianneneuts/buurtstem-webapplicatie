@@ -15,6 +15,12 @@
 
     <div class="content">
         <h2>Het forum</h2>
+
+        <!-- topic toevoegen -->
+        <div class="topic">
+            <p>Voeg een nieuw topic toe!</p>
+            <a href="#" class="add"><i class="fas fa-plus" style="color: #C78743;"></i></a>
+        </div>
     </div>
 </body>
 </html>
