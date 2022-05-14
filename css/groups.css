@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
 .content {
     background:white;
     position: fixed;
@@ -12,4 +17,43 @@
 
 .content h2 {
     color: #313639;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.list {
+    width: auto;
+}
+
+.group-1 {
+    margin-left: 150px;
+    margin-top: 50px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 50px;
+    border-color: #313639;
+}
+
+.group-2 {
+    margin-top: 50px;
+    float: right;
+    margin-right: 350px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 50px;
+    padding-right: 130px;
+    border-color: #313639;
+}
+
+a button {
+    background-image: linear-gradient(#A9DB23, #82A81B);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 1em 3em;
+    border-radius: 1em;
+    margin-top: 50px;
 }

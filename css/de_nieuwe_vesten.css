@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
 .content {
     background:white;
     position: fixed;
@@ -12,6 +17,8 @@
 
 .content h2 {
     color: #313639;
+    margin-top: 30px;
+    margin-left: 150px;
 }
 
 a button {
@@ -19,6 +26,8 @@ a button {
     color: white;
     text-align: center;
     border: none;
-    padding: 0.5em 2em;
+    padding: 1em 3em;
     border-radius: 1em;
+    margin-top: 50px;
+    margin-left: 150px;
 }

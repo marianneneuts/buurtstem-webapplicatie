@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
 .content {
     background:white;
     position: fixed;
@@ -12,4 +17,6 @@
 
 .content h2 {
     color: #313639;
+    margin-top: 30px;
+    margin-left: 150px;
 }
