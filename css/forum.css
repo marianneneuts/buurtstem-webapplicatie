@@ -8,15 +8,14 @@ p {
 }
 
 .content {
-    background:white;
+    background: white;
     position: fixed;
     width: calc(100% - 225px);
 	margin-left: 225px;
 	height: 100%;
+    padding: 50px 50px;
 }
 
 .content h2 {
     color: #313639;
-    margin-top: 30px;
-    margin-left: 150px;
 }

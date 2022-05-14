@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    background:white;
+    position: fixed;
+    width: calc(100% - 225px);
+	margin-left: 225px;
+	height: 100%;
+}
+
+.content h2 {
+    color: #313639;
+}
+
+.btn-toevoegen {
+    background-image: linear-gradient(#A9DB23, #82A81B);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 1em;
+}
