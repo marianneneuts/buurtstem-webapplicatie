@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
 .content {
     background: white;
     position: fixed;
@@ -13,31 +18,4 @@
 
 .content h2 {
     color: #313639;
-}
-
-.topic {
-    display: flex;
-}
-
-.topic a {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #313639;
-}
-
-.topic a:active {
-    color: #313639;
-}
-
-.topic a:visited {
-    color: #313639;
-}
-
-table {
-    width: 100%;
-}
-
-tr th, tr td {
-    padding: 10px;
-    border: 1px solid #313639;
 }

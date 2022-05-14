@@ -18,6 +18,10 @@
 
         <br>
 
+        <p>Buurtstem geeft je de mogelijkheid om mee te <br>beslissen over de Nieuwe Mechelse Vesten <br>Brusselpoort en Ragheno! Wat mis jij nu echt in de <br>Karmelietentuin? Droom je van een veilig <br>voetbalveldje? Of wil je liever samen met je familie en <br>vrienden kunnen barbecueën? Jouw gekste ideeën <br>kan je laten horen op de applicatie Buurtstem!<br>
+        <br>
+        Daar blijft het niet bij! Zo kan je, wanneer je genoeg <br>stemmen hebt, je idee gaan visualiseren via onze <br>visualisatietool! Hierbij kan je pennen, vormen, <br>templates en andere gereedschappen gebruiken om <br>een stukje van de Nieuwe Vesten in te vullen!</p>
+
         <a href="de_nieuwe_vesten.php">
             <button>De Nieuwe Vesten</button>
         </a>

@@ -15,6 +15,27 @@
     
     <div class="content">
         <h2>Mijn groepen</h2>
+
+        <div class="list"></div>
+
+        <div class="group-1">
+            <h3>Voetballen op de vesten</h3>
+            <a href="">Groep bekijken</a>
+            <br>
+            <a href="">
+            <button>Naar bord</button>
+            </a>
+        </div>
+
+        <div class="group-2">
+            <h3>Boekenclub</h3>
+            <a href="">Groep bekijken</a>
+            <br>
+            <a href="">
+            <button>Naar bord</button>
+            </a>
+        </div>
+        </div>
     </div>
 </body>
 </html>
