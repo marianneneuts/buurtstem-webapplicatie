@@ -21,6 +21,8 @@
         <br>
         Er komen nieuwe pleinen en plekken voor <br>ontmoeting, ontspanning, sport en spel. En de rijke <br>geschiedenis van Mechelen zal je voortaan niet <br>alleen binnen maar ook op de vesten op een <br>aangename manier beleven.  </p>
 
+        <br>
+
         <a href="buurtstem.php">
             <button>Buurtstem</button>
         </a>

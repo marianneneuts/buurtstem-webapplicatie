@@ -22,6 +22,8 @@
         <br>
         Daar blijft het niet bij! Zo kan je, wanneer je genoeg <br>stemmen hebt, je idee gaan visualiseren via onze <br>visualisatietool! Hierbij kan je pennen, vormen, <br>templates en andere gereedschappen gebruiken om <br>een stukje van de Nieuwe Vesten in te vullen!</p>
 
+        <br>
+
         <a href="de_nieuwe_vesten.php">
             <button>De Nieuwe Vesten</button>
         </a>

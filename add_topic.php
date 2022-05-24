@@ -38,6 +38,8 @@
     <div class="content">
         <h2>Laat hier je topic achter!</h2>
 
+        <br>
+
         <form action="" method="post">
             <!-- errors -->
             <?php if(isset($error)): ?>
@@ -56,6 +58,8 @@
             <div class="form__field">
                 <input type="text" id="omschrijving" name="description" placeholder="Omschrijving">
             </div>
+            
+            <br>
 
             <!-- btn -->
             <div class="form__field">

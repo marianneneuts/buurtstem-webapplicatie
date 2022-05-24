@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-p {
-    margin-top: 20px;
-    margin-left: 150px;
-}
-
 .content {
     background: white;
     position: fixed;
@@ -18,4 +13,28 @@ p {
 
 .content h2 {
     color: #313639;
+}
+
+table {
+	margin-top: 50px;
+	text-align: left;
+	border-collapse: collapse; 
+	background-color: white;
+}
+
+th, td {
+	border: 1px solid #313639;
+	padding: 25px;
+}
+
+a:link {
+	color: #313639;
+}
+
+a:visited {
+	color: #313639;
+}
+
+a:active {
+	color: #313639;
 }

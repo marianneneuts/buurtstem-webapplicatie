@@ -3,15 +3,37 @@
 }
 
 .content {
-    background:white;
+    background: white;
     position: fixed;
     width: calc(100% - 225px);
 	margin-left: 225px;
 	height: 100%;
+    padding: 50px 50px;
 }
 
 .content h2 {
     color: #313639;
+}
+
+.form__field {
+    padding-bottom: 1em;
+}
+
+.form__field label {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.form__field .label__inline {
+    display: inline-block;
+}
+
+.form__field input[type = text], 
+.form__field input[type = password] {
+    padding: 0.5em;
+    border: none;
+    border-style: none;
+    border-radius: 1em;
 }
 
 .btn-toevoegen {
@@ -19,6 +41,6 @@
     color: white;
     text-align: center;
     border: none;
-    padding: 0.5em 2em;
+    padding: 1em 3em;
     border-radius: 1em;
 }

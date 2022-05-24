@@ -2,23 +2,17 @@
     box-sizing: border-box;
 }
 
-p {
-    margin-top: 20px;
-    margin-left: 150px;
-}
-
 .content {
-    background:white;
+    background: white;
     position: fixed;
     width: calc(100% - 225px);
 	margin-left: 225px;
 	height: 100%;
+    padding: 50px 50px;
 }
 
 .content h2 {
     color: #313639;
-    margin-top: 30px;
-    margin-left: 150px;
 }
 
 a button {
@@ -28,6 +22,4 @@ a button {
     border: none;
     padding: 1em 3em;
     border-radius: 1em;
-    margin-top: 50px;
-    margin-left: 150px;
 }

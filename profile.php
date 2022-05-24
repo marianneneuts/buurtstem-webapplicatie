@@ -15,6 +15,7 @@
     
     <div class="content">
         <h2>Mijn profiel</h2>
+        <br>
         <p>*Je gegevens zijn onzichtbaar gemaakt voor andere gebruikers. Leden van een groep waaraan je zelf deelneemt hebben wél toegang tot je gegevens.</p>
     </div>
 </body>

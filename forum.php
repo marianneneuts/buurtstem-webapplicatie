@@ -23,8 +23,6 @@
             <a href="add_topic.php" class="add">Voeg een nieuw topic toe! <i class="fas fa-plus" style="color: #C78743;"></i></a>
         </div>
 
-        <br>
-
         <!-- tabel -->
         <table class="table">
             <thead>
@@ -38,10 +36,10 @@
 
             <tbody>
                 <tr>
-                    <td>Buurtstem</td>
+                    <td><a href="topic.php">Voetballen in de wijk Heihoek</a></td>
                     <td>0</td>
                     <td>0</td>
-                    <td>2022-05-11</td>
+                    <td>11-05-2022</td>
                 </tr>
             </tbody>
         </table>
