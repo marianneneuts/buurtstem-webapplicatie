@@ -1,6 +1,10 @@
-<?php include_once('logged_in.inc.php'); ?>
+<?php
+    include_once('logged_in.inc.php');
+    include_once('core/autoload.php');
 
-<!DOCTYPE html>
+    $topics = Topic::getAll();
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +27,11 @@
             <a href="add_topic.php" class="add">Voeg een nieuw topic toe! <i class="fas fa-plus" style="color: #C78743;"></i></a>
         </div>
 
+        <?php if(empty($topics)): ?>
+            <br>
+            <p>Er zijn nog geen topics geplaatst.</p>
+        <?php endif; ?>
+
         <!-- tabel -->
         <table class="table">
             <thead>
@@ -34,14 +43,18 @@
                 </tr>
             </thead>
 
-            <tbody>
-                <tr>
-                    <td><a href="topic.php">Voetballen in de wijk Heihoek</a></td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>11-05-2022</td>
-                </tr>
-            </tbody>
+            <?php if(!empty($topics)): ?>
+                <?php foreach($topics as $topic): ?>
+                    <tbody>
+                        <tr>
+                            <td><?php echo("<a href='topic.php?topic=". $topic["id"] ."'> ". htmlspecialchars($topic["title"]) ." </a>")?></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td><?php echo htmlspecialchars($topic['date']); ?></td>
+                        </tr>
+                    </tbody>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </table>
     </div>
 </body>

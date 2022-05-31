@@ -1,6 +1,11 @@
-<?php include_once('logged_in.inc.php'); ?>
+<?php
+    include_once('logged_in.inc.php');
+    include_once('core/autoload.php');
 
-<!DOCTYPE html>
+    $topicId = $_GET['topic'];
+    $topic = Topic::getTopicById($topicId);
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,9 +19,11 @@
     <?php include_once("nav.inc.php"); ?>
 
     <div class="content">
-        <h2>Voetballen in de wijk Heihoek</h2>
+        <h2><?php echo htmlspecialchars($topic['title']); ?></h2>
         <br>
-        <p>Omschrijving...</p>
+        <p><?php echo htmlspecialchars($topic['description']); ?></p>
+        <br>
+        <p class="date" style="opacity: 0.5">Geplaatst op: <?php echo htmlspecialchars($topic['date']); ?></p>
     </div>
 </body>
 </html>

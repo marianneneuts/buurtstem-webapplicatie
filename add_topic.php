@@ -13,6 +13,7 @@
             }
             $topic->setTitle($_POST["title"]);
             $topic->setDescription($_POST["description"]);
+            $topic->setDate(date("Y-m-d"));
             $topic->add();
 
             header("Location: forum.php");

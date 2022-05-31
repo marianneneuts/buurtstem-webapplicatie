@@ -63,7 +63,7 @@
         // date
         public function setDate($date) {
             $date = new DateTime();
-            $this->date = $date->format('Y-m-d H:i:s');
+            $this->date = $date->format('Y-m-d');
         }
 
         public function getDate() {
@@ -78,5 +78,20 @@
             $statement->bindValue(":description", $this->description);
             $statement->bindValue(":date", $this->date);
             $statement->execute();
+        }
+
+        public static function getAll() {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select * from topics");
+            $statement->execute();
+            return $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+
+        public static function getTopicById($id) {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select * from topics where id = :id");
+            $statement->bindValue(":id", $id);
+            $statement->execute();
+            return $statement->fetch(PDO::FETCH_ASSOC);
         }
     }
