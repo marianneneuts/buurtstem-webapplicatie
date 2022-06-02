@@ -17,9 +17,13 @@
         <h2>De Nieuwe Vesten</h2>
 
         <br>
-        <p>In het voorjaar van 2022 opent de tangent. Die <br> verbindt de op- en afritten van de E19 in Mechelen-Zuid <br>rechtstreeks met de achterzijde van het station, <br>de Leuvensesteenweg en de N15. Die kortere, <br>snellere route zal zorgen voor minder doorgaand <br>verkeer op de vesten. Dat geeft ons de kans om de <br>ruimte op onze vesten anders te gebruiken. <br>
-        <br>
-        Er komen nieuwe pleinen en plekken voor <br>ontmoeting, ontspanning, sport en spel. En de rijke <br>geschiedenis van Mechelen zal je voortaan niet <br>alleen binnen maar ook op de vesten op een <br>aangename manier beleven.  </p>
+
+        <div class="wrapper">
+            <p>In het voorjaar van 2022 opent de tangent. Die verbindt de op- en afritten van de E19 in Mechelen-Zuid rechtstreeks met de achterzijde van het station,  de Leuvensesteenweg en de N15. Die kortere, snellere route zal zorgen voor minder doorgaand verkeer op de vesten. Dat geeft ons de kans om de ruimte op onze vesten anders te gebruiken.<br>
+            <br>Er komen nieuwe pleinen en plekken voor ontmoeting, ontspanning, sport en spel. En de rijke geschiedenis van Mechelen zal je voortaan niet alleen binnen maar ook op de vesten op een aangename manier beleven.</p>
+
+            <img src="" alt="">
+        </div>
 
         <br>
 

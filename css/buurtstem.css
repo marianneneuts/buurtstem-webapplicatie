@@ -15,6 +15,14 @@
     color: #313639;
 }
 
+.content .wrapper {
+    display: flex;
+}
+
+.content .wrapper p {
+    width: 50%;
+}
+
 a button {
     background-image: linear-gradient(#A9DB23, #82A81B);
     color: white;

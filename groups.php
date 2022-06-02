@@ -16,7 +16,7 @@
     <div class="content">
         <h2>Mijn groepen</h2>
 
-        <div class="group-1">
+        <div class="card">
             <h3>Voetballen in de wijk Heihoek</h3>
             <br>
             <a href="group_details.php">Groep bekijken</a>

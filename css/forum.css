@@ -17,14 +17,37 @@
 
 table {
 	margin-top: 50px;
-	text-align: left;
-	border-collapse: collapse; 
-	background-color: white;
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
 }
 
-th, td {
-	border: 1px solid #313639;
+table tr th,
+table tr td {
+	border-right: 1px solid rgba(49, 54, 57, 0.5);
+	border-bottom: 1px solid rgba(49, 54, 57, 0.5);
 	padding: 25px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+	border-left: 1px solid rgba(49, 54, 57, 0.5);
+}
+
+table tr th {
+	background: white;
+	border-top: 1px solid rgba(49, 54, 57, 0.5);
+	text-align: left;
+}
+  
+/* top-left border-radius */
+table tr:first-child th:first-child {
+	border-top-left-radius: 25px;
+}
+  
+/* top-right border-radius */
+table tr:first-child th:last-child {
+	border-top-right-radius: 25px;
 }
 
 a:link {

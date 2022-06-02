@@ -81,6 +81,10 @@ h2 {
     color: #313639;
 }
 
+.login a:link {
+    color: #313639;
+}
+
 .login a:active {
     color: #313639;
 }

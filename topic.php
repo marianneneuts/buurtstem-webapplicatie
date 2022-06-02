@@ -19,11 +19,19 @@
     <?php include_once("nav.inc.php"); ?>
 
     <div class="content">
-        <h2><?php echo htmlspecialchars($topic['title']); ?></h2>
-        <br>
-        <p><?php echo htmlspecialchars($topic['description']); ?></p>
-        <br>
-        <p class="date" style="opacity: 0.5">Geplaatst op: <?php echo htmlspecialchars($topic['date']); ?></p>
+        <div class="card">
+            <div class="back">
+                <a href="forum.php" class="back"><i class="fas fa-arrow-left" style="color: #C78743;"></i></a>
+            </div>
+
+            <br>
+
+            <h2><?php echo htmlspecialchars($topic['title']); ?></h2>
+            <br>
+            <p><?php echo htmlspecialchars($topic['description']); ?></p>
+            <br>
+            <p class="date" style="opacity: 0.5">Geplaatst op: <?php echo htmlspecialchars($topic['date']); ?></p>
+        </div>
     </div>
 </body>
 </html>

@@ -39,7 +39,7 @@
                     <th scope="col">Titel</th>
                     <th scope="col">Bekeken</th>
                     <th scope="col">Reacties</th>
-                    <th scope="col">Datum</th>
+                    <th scope="col">Geplaatst op</th>
                 </tr>
             </thead>
 
@@ -47,7 +47,7 @@
                 <?php foreach($topics as $topic): ?>
                     <tbody>
                         <tr>
-                            <td><?php echo("<a href='topic.php?topic=". $topic["id"] ."'> ". htmlspecialchars($topic["title"]) ." </a>")?></td>
+                            <td style="text-decoration: underline"><?php echo("<a href='topic.php?topic=". $topic["id"] ."'> ". htmlspecialchars($topic["title"]) ." </a>")?></td>
                             <td>0</td>
                             <td>0</td>
                             <td><?php echo htmlspecialchars($topic['date']); ?></td>

@@ -18,3 +18,9 @@
 .content p {
     color: #313639;
 }
+
+.card {
+    padding: 50px 50px;
+    border: 1px solid rgba(49, 54, 57, 0.5);
+    border-radius: 25px;
+}

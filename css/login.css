@@ -81,6 +81,10 @@ h2 {
     color: #313639;
 }
 
+.signup a:link {
+    color: #313639;
+}
+
 .signup a:active {
     color: #313639;
 }

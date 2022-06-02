@@ -37,6 +37,12 @@
     <?php include_once("nav.inc.php"); ?>
     
     <div class="content">
+        <div class="back">
+            <a href="forum.php" class="back"><i class="fas fa-arrow-left" style="color: #C78743;"></i></a>
+        </div>
+
+        <br>
+
         <h2>Laat hier je topic achter!</h2>
 
         <br>
@@ -57,10 +63,8 @@
 
             <!-- omschrijving -->
             <div class="form__field">
-                <input type="text" id="omschrijving" name="description" placeholder="Omschrijving">
+                <textarea rows="4" cols="50" id="omschrijving" name="description"  placeholder="Omschrijving van je idee"></textarea>
             </div>
-            
-            <br>
 
             <!-- btn -->
             <div class="form__field">

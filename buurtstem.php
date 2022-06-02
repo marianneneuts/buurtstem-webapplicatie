@@ -18,9 +18,12 @@
 
         <br>
 
-        <p>Buurtstem geeft je de mogelijkheid om mee te <br>beslissen over de Nieuwe Mechelse Vesten <br>Brusselpoort en Ragheno! Wat mis jij nu echt in de <br>Karmelietentuin? Droom je van een veilig <br>voetbalveldje? Of wil je liever samen met je familie en <br>vrienden kunnen barbecueën? Jouw gekste ideeën <br>kan je laten horen op de applicatie Buurtstem!<br>
-        <br>
-        Daar blijft het niet bij! Zo kan je, wanneer je genoeg <br>stemmen hebt, je idee gaan visualiseren via onze <br>visualisatietool! Hierbij kan je pennen, vormen, <br>templates en andere gereedschappen gebruiken om <br>een stukje van de Nieuwe Vesten in te vullen!</p>
+        <div class="wrapper">
+            <p>Buurtstem geeft je de mogelijkheid om mee te beslissen over de Nieuwe Mechelse Vesten Brusselpoort en Ragheno! Wat mis jij nu echt in de Karmelietentuin? Droom je van een veilig voetbalveldje? Of wil je liever samen met je familie  en vrienden kunnen barbecueën? Jouw gekste ideeën kan je laten horen op de applicatie Buurtstem!<br>
+            <br>Daar blijft het niet bij! Zo kan je, wanneer je genoeg stemmen hebt, je idee gaan visualiseren via onze visualisatietool! Hierbij kan je pennen, vormen, templates en andere gereedschappen gebruiken om een stukje van de Nieuwe Vesten in te vullen!</p>
+
+            <img src="" alt="">
+        </div>
 
         <br>
 
