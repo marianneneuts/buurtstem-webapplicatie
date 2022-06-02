@@ -1,6 +1,11 @@
-<?php include_once('logged_in.inc.php'); ?>
+<?php
+    include_once('logged_in.inc.php');
+    include_once('core/autoload.php');
 
-<!DOCTYPE html>
+    $userId = $_GET["user"];
+    $avatar = User::getAvatarById($userId);
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,6 +22,19 @@
         <h2>Mijn profiel</h2>
         <br>
         <p>*Je gegevens zijn onzichtbaar gemaakt voor andere gebruikers. Leden van een groep waaraan je zelf deelneemt hebben wél toegang tot je gegevens.</p>
+
+        <div class="card">
+            <?php if($_SESSION["userId"] == $_GET["user"]): ?>
+                <div class="header">
+                    <img src="<?php echo($avatar); ?>" alt="avatar">
+                    <a href="edit_profile.php" class="edit"><i class="fa fa-camera" aria-hidden="true" style="color: #C78743; background:transparent;"></i></a>
+                </div>
+            <?php endif; ?>
+
+            <?php if($_SESSION["userId"] != $_GET["user"]): ?>
+                <h2>Niks te zien hier!</h2>
+            <?php endif; ?>
+        </div>
     </div>
 </body>
 </html>

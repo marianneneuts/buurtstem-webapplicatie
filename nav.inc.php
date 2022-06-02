@@ -10,7 +10,7 @@
 
         <ul>
             <li>
-                <a href="profile.php" class="profile"><i class="fas fa-user" style="color: #C78743;"></i> Profiel</a>
+                <a href="profile.php?user=<?php echo($_SESSION['userId']) ?>" class="profile"><i class="fas fa-user" style="color: #C78743;"></i> Profiel</a>
             </li>
         </ul>
     </div>

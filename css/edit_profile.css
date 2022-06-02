@@ -26,6 +26,11 @@
     border-radius: 25px;
 }
 
+.card form {
+    display: flex;
+    align-items: center;
+}
+
 .header {
     width: 140px;
     height: 140px;
@@ -42,18 +47,35 @@
     border-radius: 50%;
 }
 
-.header a {
-    position: absolute;
-    top: 20px;
-    right: -7px;
-    /* border: 1px solid; */
-    border-radius: 50%;
-    /* padding: 11px; */
-    height: 30px;
-    width: 30px;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0 0 8px 3px rgba(49, 54, 57, 0.25);
+.card .buttons {
+    margin-left: 50px;
+}
+
+.btn-update, .btn-delete, .buttons a, .upload_avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    margin: 1em 0em;
+}
+
+.btn-update, .btn-delete {
+    background-image: linear-gradient(#A9DB23, #82A81B);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 1em 3em;
+    border-radius: 1em;
+}
+
+a:link {
+	color: #313639;
+}
+
+a:visited {
+	color: #313639;
+}
+
+a:active {
+	color: #313639;
 }
