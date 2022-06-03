@@ -10,6 +10,7 @@
         private $streetname;
         private $number;
         private $place;
+        private $biography;
 
         // id
         public function setUserId($userId) {
@@ -157,6 +158,15 @@
             }
         }
 
+        // biography
+        public function setBiography($biography) {
+            $this->biography = $biography;
+        }
+
+        public function getBiography() {
+            return $this->biography;
+        }
+
         // signup
         public function signup() {
             $conn = Db::getInstance();
@@ -214,7 +224,7 @@
         }
 
         // update the avatar
-        public function updateAvatar($userId, $picture){
+        public function updateAvatar($userId, $picture) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("update users set users.profile_picture = :picture where id = :userId");
             $statement->bindValue(":userId", $userId);
@@ -223,7 +233,8 @@
             return $result;
         }
 
-        public static function getFirstnameById($userId){
+        // get the firstname based on the user id
+        public static function getFirstnameById($userId) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select firstname from users where id = :userId");
             $statement->bindValue(":userId", $userId);
@@ -232,7 +243,8 @@
             return $result["firstname"];
         }
 
-        public static function getLastnameById($userId){
+        // get the lastname based on the user id
+        public static function getLastnameById($userId) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select lastname from users where id = :userId");
             $statement->bindValue(":userId", $userId);
@@ -241,12 +253,34 @@
             return $result["lastname"];
         }
 
-        public static function getEmailById($userId){
+        // get the email based on the user id
+        public static function getEmailById($userId) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select email from users where id = :userId");
             $statement->bindValue(":userId", $userId);
             $statement->execute();
             $result = $statement->fetch();
             return $result["email"];
+        }
+
+        // get the biography based on the user id
+        public static function getBiographyById($userId) {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select biography from users where id = :userId");
+            $statement->bindValue(":userId", $userId);
+            $statement->execute();
+            $result = $statement->fetch();
+            return $result["biography"];
+        }
+
+        // update the biography
+        public function updateBiography() {
+            $userId = $this->userId;
+            $biography = $this->biography;
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("update users set biography = :biography where id = :userId");
+            $statement->bindValue(":userId", $userId);
+            $statement->bindValue(":biography", $biography);
+            $statement->execute();
         }
     }

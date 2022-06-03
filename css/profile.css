@@ -69,3 +69,12 @@
     background-color: white;
     box-shadow: 0 0 8px 3px rgba(49, 54, 57, 0.25);
 }
+
+.biography a button {
+    background-image: linear-gradient(#A9DB23, #82A81B);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 1em 3em;
+    border-radius: 1em;
+}

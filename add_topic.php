@@ -63,7 +63,7 @@
 
             <!-- omschrijving -->
             <div class="form__field">
-                <textarea rows="4" cols="50" id="omschrijving" name="description"  placeholder="Omschrijving van je idee"></textarea>
+                <textarea rows="4" cols="50" id="omschrijving" name="description" placeholder="Omschrijving van je idee"></textarea>
             </div>
 
             <!-- btn -->

@@ -7,6 +7,7 @@
     $firstname = User::getFirstnameById($userId);
     $lastname = User::getLastnameById($userId);
     $email = User::getEmailById($userId);
+    $biography = User::getBiographyById($userId);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -37,6 +38,22 @@
                         
                         <h3 style="opacity: 0.5"><?php echo(htmlspecialchars($email)); ?></h3>
                     </div>
+                </div>
+
+                <br>
+
+                <div class="biography">
+                    <h2>Mijn biografie</h2>
+
+                    <br>
+
+                    <p><?php echo(htmlspecialchars($biography)); ?></p>
+
+                    <br>
+
+                    <a href="edit_biography.php">
+                        <button>Biografie bijwerken</button>
+                    </a>
                 </div>
             <?php endif; ?>
 

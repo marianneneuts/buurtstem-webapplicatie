@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    background: white;
+    position: fixed;
+    width: calc(100% - 225px);
+	margin-left: 225px;
+	height: 100%;
+    padding: 50px 50px;
+}
+
+.content h2 {
+    color: #313639;
+}
+
+.form__field {
+    padding-bottom: 1em;
+}
+
+.form__field textarea {
+    padding: 1em 1em;
+    border: 1px solid rgba(49, 54, 57, 0.5);
+    border-radius: 1em;
+    color: #313639;
+    width: 100%;
+}
+
+.btn-bijwerken {
+    background-image: linear-gradient(#A9DB23, #82A81B);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 1em 3em;
+    border-radius: 1em;
+}
