@@ -22,11 +22,18 @@
         <div class="card">
             <div class="back">
                 <a href="forum.php" class="back"><i class="fas fa-arrow-left" style="color: #C78743;"></i></a>
+
+                <a href="delete_topic.php?topic=<?php echo $_GET["topic"]; ?>" class="delete"><i class="fa fa-trash" style="color: #C78743;"></i></a>
             </div>
 
             <br>
 
-            <h2><?php echo htmlspecialchars($topic['title']); ?></h2>
+            <div class="header">
+                <h2><?php echo htmlspecialchars($topic['title']); ?></h2>
+
+                <a href="edit_topic.php" class="edit"><i class="fa fa-edit" style="color: #C78743;"></i></a>
+            </div>
+            
             <br>
             <p><?php echo htmlspecialchars($topic['description']); ?></p>
             <br>

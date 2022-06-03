@@ -94,4 +94,12 @@
             $statement->execute();
             return $statement->fetch(PDO::FETCH_ASSOC);
         }
+
+        // delete user topic
+        public static function deleteTopic($topicId) {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("delete from topics where id = :topicId");
+            $statement->bindValue(":topicId", $topicId);
+            $statement->execute();
+        }
     }

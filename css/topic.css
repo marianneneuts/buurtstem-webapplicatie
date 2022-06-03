@@ -24,3 +24,13 @@
     border: 1px solid rgba(49, 54, 57, 0.5);
     border-radius: 25px;
 }
+
+.card .back {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .header {
+    display: flex;
+    justify-content: space-between;
+}
