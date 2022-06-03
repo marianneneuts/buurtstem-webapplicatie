@@ -23,7 +23,14 @@
     <?php include_once("nav.inc.php"); ?>
     
     <div class="content">
-        <h2>Mijn profiel</h2>
+        <div class="delete">
+            <h2>Mijn profiel</h2>
+
+            <?php if($_SESSION["userId"] == $_GET["user"]): ?>
+                <a href="delete_profile.php" class="delete"><h2><i class="fa fa-trash" style="color: #C78743;"></i></h2></a>
+            <?php endif; ?>
+        </div>
+
         <br>
         <p>*Je gegevens zijn onzichtbaar gemaakt voor andere gebruikers. Leden van een groep waaraan je zelf deelneemt hebben wél toegang tot je gegevens.</p>
 
@@ -55,14 +62,12 @@
                         <button>Biografie bijwerken</button>
                     </a>
                 </div>
-
-                <br>
-
-                <a href="delete_profile.php" class="delete"><i class="fa fa-trash" style="color: #C78743;"></i> Profiel verwijderen</a>
             <?php endif; ?>
 
             <?php if($_SESSION["userId"] != $_GET["user"]): ?>
                 <h2>Niks te zien hier!</h2>
+                <br>
+                <p>Je hebt momenteel geen toegang tot deze gegevens.</p>
             <?php endif; ?>
         </div>
     </div>

@@ -11,6 +11,11 @@
     padding: 50px 50px;
 }
 
+.content .delete {
+    display: flex;
+    justify-content: space-between;
+}
+
 .content h2 {
     color: #313639;
 }
