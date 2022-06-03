@@ -4,6 +4,9 @@
 
     $userId = $_GET["user"];
     $avatar = User::getAvatarById($userId);
+    $firstname = User::getFirstnameById($userId);
+    $lastname = User::getLastnameById($userId);
+    $email = User::getEmailById($userId);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -27,7 +30,13 @@
             <?php if($_SESSION["userId"] == $_GET["user"]): ?>
                 <div class="header">
                     <img src="<?php echo($avatar); ?>" alt="avatar">
-                    <a href="edit_profile.php" class="edit"><i class="fa fa-camera" aria-hidden="true" style="color: #C78743; background:transparent;"></i></a>
+                    <a href="edit_profile_picture.php" class="edit"><i class="fa fa-camera" aria-hidden="true" style="color: #C78743; background:transparent;"></i></a>
+
+                    <div class="personal">
+                        <h2><?php echo(htmlspecialchars($firstname . " " . $lastname)); ?></h2>
+                        
+                        <h3 style="opacity: 0.5"><?php echo(htmlspecialchars($email)); ?></h3>
+                    </div>
                 </div>
             <?php endif; ?>
 

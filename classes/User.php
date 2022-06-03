@@ -222,4 +222,31 @@
             $result = $statement->execute();
             return $result;
         }
+
+        public static function getFirstnameById($userId){
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select firstname from users where id = :userId");
+            $statement->bindValue(":userId", $userId);
+            $statement->execute();
+            $result = $statement->fetch();
+            return $result["firstname"];
+        }
+
+        public static function getLastnameById($userId){
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select lastname from users where id = :userId");
+            $statement->bindValue(":userId", $userId);
+            $statement->execute();
+            $result = $statement->fetch();
+            return $result["lastname"];
+        }
+
+        public static function getEmailById($userId){
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select email from users where id = :userId");
+            $statement->bindValue(":userId", $userId);
+            $statement->execute();
+            $result = $statement->fetch();
+            return $result["email"];
+        }
     }
