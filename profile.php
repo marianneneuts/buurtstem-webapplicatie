@@ -31,7 +31,7 @@
             <?php if($_SESSION["userId"] == $_GET["user"]): ?>
                 <div class="header">
                     <img src="<?php echo($avatar); ?>" alt="avatar">
-                    <a href="edit_profile_picture.php" class="edit"><i class="fa fa-camera" aria-hidden="true" style="color: #C78743; background:transparent;"></i></a>
+                    <a href="edit_profile_picture.php" class="edit"><i class="fa fa-camera" aria-hidden="true" style="color: #C78743; background: transparent;"></i></a>
 
                     <div class="personal">
                         <h2><?php echo(htmlspecialchars($firstname . " " . $lastname)); ?></h2>
@@ -55,6 +55,10 @@
                         <button>Biografie bijwerken</button>
                     </a>
                 </div>
+
+                <br>
+
+                <a href="delete_profile.php" class="delete"><i class="fa fa-trash" style="color: #C78743;"></i> Profiel verwijderen</a>
             <?php endif; ?>
 
             <?php if($_SESSION["userId"] != $_GET["user"]): ?>

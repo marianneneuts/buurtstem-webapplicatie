@@ -283,4 +283,18 @@
             $statement->bindValue(":biography", $biography);
             $statement->execute();
         }
+
+        // delete user profile
+        public static function deleteProfile() {
+            $conn = Db::getInstance();
+            // delete profile based on the email
+            $statement = $conn->prepare("delete from users where email = :email");
+            $statement->bindValue("email", $_SESSION["email"]);
+            $statement->execute();
+
+            // delete associated topics
+            $statementProject = $conn->prepare("delete from topics where userId = :userId");
+            $statementProject->bindValue("userId", $_SESSION["userId"]);
+            $statementProject->execute();
+        }
     }
