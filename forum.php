@@ -47,7 +47,7 @@
                 <?php foreach($topics as $topic): ?>
                     <tbody>
                         <tr>
-                            <td style="text-decoration: underline"><?php echo("<a href='topic.php?topic=". $topic["id"] ."'> ". htmlspecialchars($topic["title"]) ." </a>")?></td>
+                            <td style="text-decoration: underline"><a href="topic.php?topic=<?php echo $topic["id"]; ?>" class="btn btn-info"><?php echo htmlspecialchars($topic['title']); ?></a></td>
                             <td>0</td>
                             <td>0</td>
                             <td><?php echo htmlspecialchars($topic['date']); ?></td>

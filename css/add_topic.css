@@ -43,7 +43,7 @@
     width: 100%;
 }
 
-.btn-toevoegen {
+.btn-toevoegen, .btn-bijwerken {
     background-image: linear-gradient(#A9DB23, #82A81B);
     color: white;
     text-align: center;

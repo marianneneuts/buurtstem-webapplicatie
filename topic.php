@@ -31,7 +31,7 @@
             <div class="header">
                 <h2><?php echo htmlspecialchars($topic['title']); ?></h2>
 
-                <a href="edit_topic.php" class="edit"><i class="fa fa-edit" style="color: #C78743;"></i></a>
+                <a href="edit_topic.php?topic=<?php echo $topic['id']; ?>" class="edit"><i class="fa fa-edit" style="color: #C78743;"></i></a>
             </div>
             
             <br>

@@ -102,4 +102,15 @@
             $statement->bindValue(":topicId", $topicId);
             $statement->execute();
         }
+
+        // update a topic
+        public function updateTopic($title, $description, $topicId) {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("update topics set topics.title = :title, topics.description = :description where id = :topicId");
+            $statement->bindValue(":topicId", $topicId);
+            $statement->bindValue(":title", $title);
+            $statement->bindValue(":description", $description);
+            $result = $statement->execute();
+            return $result;
+        }
     }
