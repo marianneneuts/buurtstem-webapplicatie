@@ -56,6 +56,8 @@
             <!-- btn -->
             <div class="form__field">
                 <input type="submit" name="bijwerken" value="Bijwerken" class="btn-bijwerken">
+
+                <a href="profile.php?user=<?php echo($_SESSION['userId']) ?>" class="annuleren">Annuleren</a>
             </div>
         </form>
     </div>

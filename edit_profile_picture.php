@@ -68,7 +68,7 @@
                     <input type="submit" name="delete_avatar" value="Profielfoto verwijderen" class="btn-delete">
                         
                     <!-- cancel -->
-                    <a href="profile.php?user=<?php echo($_SESSION['userId']) ?>">Cancel</a>
+                    <a href="profile.php?user=<?php echo($_SESSION['userId']) ?>">Annuleren</a>
                 </div>
             </form>
         </div>

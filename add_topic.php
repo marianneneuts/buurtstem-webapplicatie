@@ -69,6 +69,8 @@
             <!-- btn -->
             <div class="form__field">
                 <input type="submit" name="toevoegen" value="Toevoegen" class="btn-toevoegen">
+
+                <a href="forum.php" class="annuleren">Annuleren</a>
             </div>
         </form>
     </div>

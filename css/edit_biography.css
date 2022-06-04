@@ -35,3 +35,19 @@
     padding: 1em 3em;
     border-radius: 1em;
 }
+
+.content .annuleren {
+    margin-left: 1em;
+}
+
+a:link {
+	color: #313639;
+}
+
+a:visited {
+	color: #313639;
+}
+
+a:active {
+	color: #313639;
+}

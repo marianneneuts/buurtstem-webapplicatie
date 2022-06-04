@@ -56,6 +56,8 @@
             <!-- btn -->
             <div class="form__field">
                 <input type="submit" name="bijwerken" value="Bijwerken" class="btn-bijwerken">
+
+                <a href="topic.php?topic=<?php echo $_GET["topic"]; ?>" class="annuleren">Annuleren</a>
             </div>
         </form>
     </div>

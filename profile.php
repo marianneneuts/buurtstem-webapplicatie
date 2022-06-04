@@ -65,7 +65,7 @@
             <?php endif; ?>
 
             <?php if($_SESSION["userId"] != $_GET["user"]): ?>
-                <h2>Niks te zien hier!</h2>
+                <h2><i class="fas fa-frown" aria-hidden="true" style="color: #C78743; background: transparent;"></i> Niks te zien hier!</h2>
                 <br>
                 <p>Je hebt momenteel geen toegang tot deze gegevens.</p>
             <?php endif; ?>
