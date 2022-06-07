@@ -53,8 +53,8 @@
             <br>
 
             <div class="actions">
-                <a href="" class="postAction <?php if(Like::isLiked($_GET['topic'], $user['id'])){ echo 'liked'; } ?>" id="like" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalLikes; ?> likes</a>
-                <a href="" class="postAction <?php if(Dislike::isDisliked($_GET['topic'], $user['id'])){ echo 'disliked'; } ?>" id="dislike" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalDislikes; ?> dislikes</a>
+                <a href="" class="postAction <?php if(Like::isLiked($_GET['topic'], $user['id'])){ echo 'liked'; } ?>" id="like" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalLikes; ?> <i class="fa fa-thumbs-up" style="color: #C78743;"></i></a>
+                <a href="" class="postAction <?php if(Dislike::isDisliked($_GET['topic'], $user['id'])){ echo 'disliked'; } ?>" id="dislike" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalDislikes; ?> <i class="fa fa-thumbs-down" style="color: #C78743;"></i></a>
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ function dislike(e) {
     })
     .then(response => response.json())
     .then(data => {
-        dislike.innerHTML = data['totaldislikes'] + " dislikes";
+        dislike.innerHTML = data['totaldislikes'] + ' <i class="fa fa-thumbs-down" style="color: #C78743;"></i>';
         dislike.classList.toggle("disliked");
     })
     .catch((error) => {

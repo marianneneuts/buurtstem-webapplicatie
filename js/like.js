@@ -18,7 +18,7 @@ function like(e) {
     })
     .then(response => response.json())
     .then(data => {
-        like.innerHTML = data['totallikes'] + " likes";
+        like.innerHTML = data['totallikes'] + ' <i class="fa fa-thumbs-up" style="color: #C78743;"></i>';
         like.classList.toggle("liked");
     })
     .catch((error) => {

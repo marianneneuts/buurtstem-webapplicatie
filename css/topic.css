@@ -34,3 +34,23 @@
     display: flex;
     justify-content: space-between;
 }
+
+.card .actions {
+    margin-top: 50px;
+}
+
+.card .actions #dislike {
+    margin-left: 1em;
+}
+
+a:link {
+	color: #313639;
+}
+
+a:visited {
+	color: #313639;
+}
+
+a:active {
+    color: #313639;
+}
