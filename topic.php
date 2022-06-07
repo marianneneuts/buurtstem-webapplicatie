@@ -2,8 +2,14 @@
     include_once('logged_in.inc.php');
     include_once('core/autoload.php');
 
+    if(isset($_SESSION['email'])) {
+        $user = User::getUserByEmail($_SESSION['email']);
+    }
+
     $topicId = $_GET['topic'];
     $topic = Topic::getTopicById($topicId);
+
+    $totalLikes = Like::CountLikes($_GET['topic']);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -23,7 +29,9 @@
             <div class="back">
                 <a href="forum.php" class="back"><i class="fas fa-arrow-left" style="color: #C78743;"></i></a>
 
-                <a href="delete_topic.php?topic=<?php echo $_GET["topic"]; ?>" class="delete"><i class="fa fa-trash" style="color: #C78743;"></i></a>
+                <?php if($user['id'] === $topic['userId']): ?>
+                    <a href="delete_topic.php?topic=<?php echo $_GET["topic"]; ?>" class="delete"><i class="fa fa-trash" style="color: #C78743;"></i></a>
+                <?php endif; ?>
             </div>
 
             <br>
@@ -31,14 +39,24 @@
             <div class="header">
                 <h2><?php echo htmlspecialchars($topic['title']); ?></h2>
 
-                <a href="edit_topic.php?topic=<?php echo $topic['id']; ?>" class="edit"><i class="fa fa-edit" style="color: #C78743;"></i></a>
+                <?php if($user['id'] === $topic['userId']): ?>
+                    <a href="edit_topic.php?topic=<?php echo $topic['id']; ?>" class="edit"><i class="fa fa-edit" style="color: #C78743;"></i></a>
+                <?php endif; ?>
             </div>
             
             <br>
             <p><?php echo htmlspecialchars($topic['description']); ?></p>
             <br>
             <p class="date" style="opacity: 0.5">Geplaatst op: <?php echo htmlspecialchars($topic['date']); ?></p>
+
+            <br>
+
+            <div class="actions">
+                <a href="" class="postAction <?php if(Like::isLiked($_GET['topic'], $user['id'])){ echo 'liked'; } ?>" id="like" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalLikes; ?> likes</a>
+            </div>
         </div>
     </div>
+
+    <script src="js/like.js"></script>
 </body>
 </html>

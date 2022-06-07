@@ -297,4 +297,12 @@
             $statementProject->bindValue("userId", $_SESSION["userId"]);
             $statementProject->execute();
         }
+
+        public static function getUserByEmail($email) {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select * from users where email = :email");
+            $statement->bindValue(':email', $email);
+            $statement->execute();
+            return $statement->fetch();
+        }
     }

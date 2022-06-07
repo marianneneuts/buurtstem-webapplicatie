@@ -1,5 +1,3 @@
-<!-- database settings -->
-
 <?php
     const SETTINGS = [
         "db" => [
