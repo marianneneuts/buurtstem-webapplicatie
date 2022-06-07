@@ -1,7 +1,7 @@
 <?php
     include_once(__DIR__ . "/Db.php");
 
-    class Like {
+    class Dislike {
         private $topicId;
         private $userId;
 
@@ -25,34 +25,34 @@
             return $this;
         }
 
-        public static function saveLike($topicId, $userId) {
+        public static function saveDislike($topicId, $userId) {
             $conn = Db::getInstance();
-            $statement = $conn->prepare("insert into likes (topicId, userId) values (:topicId, :userId)");
+            $statement = $conn->prepare("insert into dislikes (topicId, userId) values (:topicId, :userId)");
             $statement->bindValue(":topicId", $topicId);
             $statement->bindValue(":userId", $userId);
             return $statement->execute();
         }
 
-        public static function CountLikes($topicId) {
+        public static function CountDislikes($topicId) {
             $conn = Db::getInstance();
-            $statement = $conn->prepare("select count(id) as total from likes where topicId = :topicId");
+            $statement = $conn->prepare("select count(id) as total from dislikes where topicId = :topicId");
             $statement->bindValue(":topicId", $topicId);
             $statement->execute();
             $count = $statement->fetch();
             return $count['total'];
         }
 
-        public static function removeLike($topicId, $userId) {
+        public static function removeDislike($topicId, $userId) {
                 $conn = Db::getInstance();
-                $statement = $conn->prepare("delete from likes where topicId = :topicId and userId = :userId");
+                $statement = $conn->prepare("delete from dislikes where topicId = :topicId and userId = :userId");
                 $statement->bindValue(":topicId", $topicId);
                 $statement->bindValue(":userId", $userId);
                 return $statement->execute();
         }
 
-        public static function isLiked($topicId, $userId) {
+        public static function isDisliked($topicId, $userId) {
             $conn = Db::getInstance();
-            $statement = $conn->prepare("select * from likes where topicId = :topicId and userId = :userId");
+            $statement = $conn->prepare("select * from dislikes where topicId = :topicId and userId = :userId");
             $statement->bindValue(":topicId", $topicId);
             $statement->bindValue(":userId", $userId);
             $statement->execute();
