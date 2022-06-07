@@ -12,6 +12,8 @@
     $totalLikes = Like::CountLikes($_GET['topic']);
     $totalDislikes = Dislike::CountDislikes($_GET['topic']);
 
+    $comments = Comment::getAll($_GET['topic']);
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,10 +58,39 @@
                 <a href="" class="postAction <?php if(Like::isLiked($_GET['topic'], $user['id'])){ echo 'liked'; } ?>" id="like" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalLikes; ?> <i class="fa fa-thumbs-up" style="color: #C78743;"></i></a>
                 <a href="" class="postAction <?php if(Dislike::isDisliked($_GET['topic'], $user['id'])){ echo 'disliked'; } ?>" id="dislike" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalDislikes; ?> <i class="fa fa-thumbs-down" style="color: #C78743;"></i></a>
             </div>
+
+            <br>
+
+            <div class="commentSection">
+                <div class="commentForm">
+                    <input type="text" id="commentText" placeholder="Laat een reactie achter">
+                    <a href="#" class="submitComment" data-topicid="<?php echo $topic['id'] ?>">Reactie plaatsen</a>
+                </div>
+
+                <br>
+
+                <ul class="CommentList">
+                    <?php foreach($comments as $comment): ?>
+                        <?php $commentUser = User::getUserById($comment['userId']) ?>
+                            <li>
+                                <div>
+                                    <?php if($user['id'] === $topic['userId']): ?>
+                                        <h4 class="detailsText"><?php echo $commentUser['firstname'] ?> reageerde:</h4>
+                                    <?php else: ?>
+                                        <h4 class="detailsText">Anoniem reageerde:</h4>
+                                    <?php endif; ?>
+
+                                    <p><?php echo $comment['text'] ?></p>
+                                </div>
+                            </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
         </div>
     </div>
 
     <script src="js/like.js"></script>
     <script src="js/dislike.js"></script>
+    <script src="js/comment.js"></script>
 </body>
 </html>
