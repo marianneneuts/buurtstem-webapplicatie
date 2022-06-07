@@ -20,7 +20,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buurtstem - Topic</title>
+    <title>Buurtstem - Topic <?php echo $topic["id"]; ?></title>
     <link rel="stylesheet" href="css/topic.css?v=<?php echo time(); ?>">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
@@ -52,19 +52,15 @@
             <br>
             <p class="date" style="opacity: 0.5">Geplaatst op: <?php echo htmlspecialchars($topic['date']); ?></p>
 
-            <br>
-
             <div class="actions">
                 <a href="" class="postAction <?php if(Like::isLiked($_GET['topic'], $user['id'])){ echo 'liked'; } ?>" id="like" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalLikes; ?> <i class="fa fa-thumbs-up" style="color: #C78743;"></i></a>
                 <a href="" class="postAction <?php if(Dislike::isDisliked($_GET['topic'], $user['id'])){ echo 'disliked'; } ?>" id="dislike" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalDislikes; ?> <i class="fa fa-thumbs-down" style="color: #C78743;"></i></a>
             </div>
 
-            <br>
-
             <div class="commentSection">
                 <div class="commentForm">
-                    <input type="text" id="commentText" placeholder="Laat een reactie achter">
-                    <a href="#" class="submitComment" data-topicid="<?php echo $topic['id'] ?>">Reactie plaatsen</a>
+                    <input type="text" id="commentText" placeholder=" Laat een reactie achter">
+                    <a href="#" class="submitComment" data-topicid="<?php echo $topic['id'] ?>"> <i class="fas fa-paper-plane" style="color: #C78743;"></i></a>
                 </div>
 
                 <br>
@@ -81,6 +77,8 @@
                                     <?php endif; ?>
 
                                     <p><?php echo $comment['text'] ?></p>
+                                    
+                                    <br>
                                 </div>
                             </li>
                     <?php endforeach; ?>

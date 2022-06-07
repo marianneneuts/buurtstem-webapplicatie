@@ -43,6 +43,10 @@
     margin-left: 1em;
 }
 
+.card .commentSection .commentForm {
+    margin-top: 50px;
+}
+
 a:link {
 	color: #313639;
 }
