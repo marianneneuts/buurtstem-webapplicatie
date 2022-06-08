@@ -7,6 +7,7 @@
         private $topicId;
         private $userId;
 
+        // id
         public function getCommentId() {
             return $this->commentId;
         }
@@ -16,6 +17,7 @@
             return $this;
         }
 
+        // text
         public function getText() {
             return $this->text;
         }
@@ -25,6 +27,7 @@
             return $this;
         }
 
+        // topicId
         public function getTopicId() {
             return $this->topicId;
         }
@@ -34,6 +37,7 @@
             return $this;
         }
 
+        // userId
         public function getUserId() {
             return $this->userId;
         }
@@ -43,6 +47,7 @@
             return $this;
         }
 
+        // add a comment to database
         public function save() {
             $conn = Db::getInstance();
             $statement = $conn->prepare("insert into comments (text, topicId, userId) values (:text, :topicId, :userId)");
@@ -59,11 +64,22 @@
             return $conn->lastInsertId();
         }
 
+        // get all comment information
         public static function getAll($topicId) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select * from comments where topicId = :topicId");
             $statement->bindValue(':topicId', $topicId);
             $statement->execute();
             return $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+
+        // count comments
+        public static function countComments($topicId) {
+            $conn = DB::getInstance();
+            $query = $conn->prepare("select count(id) from comments where topicId = :topicId");
+            $query->bindValue(":topicId", $topicId);
+            $query->execute();
+            $comments = intval($query->fetchColumn());
+            return($comments);
         }
     }

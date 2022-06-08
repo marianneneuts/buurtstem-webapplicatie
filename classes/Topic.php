@@ -70,6 +70,7 @@
             return $this->date;
         }
 
+        // add a topic to database
         public function add() {
             $conn = Db::getInstance();
             $statement = $conn->prepare("insert into topics (userId, title, description, date) values (:userId, :title, :description, :date)");
@@ -80,6 +81,7 @@
             $statement->execute();
         }
 
+        // get all topic information
         public static function getAll() {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select * from topics");
@@ -87,6 +89,7 @@
             return $statement->fetchAll(PDO::FETCH_ASSOC);
         }
 
+        // get a topic based on the topic id
         public static function getTopicById($id) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select * from topics where id = :id");

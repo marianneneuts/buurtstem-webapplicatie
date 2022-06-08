@@ -298,6 +298,7 @@
             $statementProject->execute();
         }
 
+        // get a user based on the email
         public static function getUserByEmail($email) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select * from users where email = :email");
@@ -306,6 +307,7 @@
             return $statement->fetch();
         }
 
+        // get a user by id
         public static function getUserById($id) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select * from users where id = :userId");

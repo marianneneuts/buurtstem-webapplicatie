@@ -46,18 +46,19 @@
                 <tr>
                     <th scope="col">Titel</th>
                     <th scope="col">Bekeken</th>
-                    <th scope="col">Reacties</th>
+                    <th scope="col">Aantal reacties</th>
                     <th scope="col">Geplaatst op</th>
                 </tr>
             </thead>
 
             <?php if(!empty($topics)): ?>
                 <?php foreach($topics as $topic): ?>
+                <?php $countComments = Comment::countComments($topic['id']); ?>
                     <tbody>
                         <tr>
                             <td style="text-decoration: underline"><a href="topic.php?topic=<?php echo $topic["id"]; ?>" class="btn btn-info"><?php echo htmlspecialchars($topic['title']); ?></a></td>
                             <td>0</td>
-                            <td>0</td>
+                            <td><?php echo $countComments ?></td>
                             <td><?php echo htmlspecialchars($topic['date']); ?></td>
                         </tr>
                     </tbody>

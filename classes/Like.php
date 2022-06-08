@@ -25,6 +25,7 @@
             return $this;
         }
 
+        // add a like to database
         public static function saveLike($topicId, $userId) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("insert into likes (topicId, userId) values (:topicId, :userId)");
@@ -33,6 +34,7 @@
             return $statement->execute();
         }
 
+        // count likes
         public static function CountLikes($topicId) {
             $conn = Db::getInstance();
             $statement = $conn->prepare("select count(id) as total from likes where topicId = :topicId");
@@ -42,6 +44,7 @@
             return $count['total'];
         }
 
+        // remove a like
         public static function removeLike($topicId, $userId) {
                 $conn = Db::getInstance();
                 $statement = $conn->prepare("delete from likes where topicId = :topicId and userId = :userId");
