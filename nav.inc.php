@@ -3,9 +3,11 @@
 <div class="wrapper">
     <!-- top navigation -->
     <div class="topbar">
-        <div class="search">
-            <input type="text" name="search" placeholder="Zoeken..." >
-            <button type="submit"><i class="fas fa-search"></i></button>
+        <div class="search-filter">
+            <form action="" method="post" class="search-form">
+                <input type="text" name="searchbalk" placeholder="Zoek een titel">
+                <button type="submit" name="search"><i class="fas fa-search"></i></button>
+            </form>
         </div>
 
         <ul>

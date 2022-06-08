@@ -113,4 +113,13 @@
             $result = $statement->execute();
             return $result;
         }
+
+        // search topics by title
+        public static function getTopicbyTitle($title) {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("select * from topics where title = :title");
+            $statement->bindValue(":title", $title);
+            $statement->execute();
+            return $statement->fetch();
+        }
     }

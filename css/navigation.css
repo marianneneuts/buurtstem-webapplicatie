@@ -65,7 +65,7 @@ body {
 	font-size: 16px;
 }
 
-.topbar .search input[type=text] {
+.topbar .search-filter input[type=text] {
 	width: 225px;
 	padding: 6px;
 	margin-left: 15px;
@@ -76,16 +76,16 @@ body {
 	outline: none;
 }
 
-.topbar .search input[type=text]::placeholder {
+.topbar .search-filter input[type=text]::placeholder {
 	color: #313639;
 }
 
-.topbar .search input[type=text]:focus {
+.topbar .search-filter input[type=text]:focus {
 	border: 2px solid rgb(145, 181, 8);
 	border-radius: 50px;
 }
 
-.topbar .search button {
+.topbar .search-filter button {
 	padding: 6px 10px;
 	color: #C78743;
 	background: transparent;

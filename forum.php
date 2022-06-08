@@ -4,6 +4,13 @@
 
     $topics = Topic::getAll();
 
+    if(isset($_POST['search']) && !empty($_POST['searchbalk'])) {
+        $search = $_POST['searchbalk'];
+        $searched_topic = Topic::getTopicbyTitle($search);
+        $id = $searched_topic['id'];
+        header("Location: topic.php?topic=".$id);
+    }
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +37,7 @@
         <?php if(empty($topics)): ?>
             <br>
             <p>Er zijn nog geen topics geplaatst.</p>
+            <br>
         <?php endif; ?>
 
         <!-- tabel -->
