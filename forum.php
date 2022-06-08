@@ -34,12 +34,6 @@
             <a href="add_topic.php" class="add">Voeg een nieuw topic toe! <i class="fas fa-plus" style="color: #C78743;"></i></a>
         </div>
 
-        <?php if(empty($topics)): ?>
-            <br>
-            <p>Er zijn nog geen topics geplaatst.</p>
-            <br>
-        <?php endif; ?>
-
         <!-- tabel -->
         <table class="table">
             <thead>
@@ -63,6 +57,17 @@
                         </tr>
                     </tbody>
                 <?php endforeach; ?>
+            <?php endif; ?>
+
+            <?php if(empty($topics)): ?>
+                <tbody>
+                    <tr>
+                        <td>N.v.t.</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>Y-m-d</td>
+                    </tr>
+                </tbody>
             <?php endif; ?>
         </table>
     </div>
