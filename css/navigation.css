@@ -44,7 +44,7 @@ body {
 .wrapper .sidebar ul li a.active {
 	color: #C78743;
 	background:white;
-    border-right: 2px solid rgb(145, 181, 8);
+    border-right: 3px solid rgb(145, 181, 8);
 }
 
 .wrapper .topbar {

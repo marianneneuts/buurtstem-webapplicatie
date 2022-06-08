@@ -32,7 +32,7 @@
         </div>
 
         <br>
-        <p>*Je gegevens zijn onzichtbaar gemaakt voor andere gebruikers. Leden van een groep waaraan je zelf deelneemt hebben wél toegang tot je gegevens.</p>
+        <p>Je gegevens zijn onzichtbaar gemaakt voor andere gebruikers. Leden van een groep waaraan je zelf deelneemt hebben wél toegang tot je gegevens.</p>
 
         <div class="card">
             <?php if($_SESSION["userId"] == $_GET["user"]): ?>

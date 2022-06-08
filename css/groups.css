@@ -23,6 +23,14 @@
     border-radius: 25px;
 }
 
+.content .card h2 {
+    color: #313639;
+}
+
+.content .card h3 {
+    color: #313639;
+}
+
 a button {
     background-image: linear-gradient(#A9DB23, #82A81B);
     color: white;

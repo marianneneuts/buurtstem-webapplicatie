@@ -20,30 +20,23 @@
 }
 
 .card {
+    margin-top: 50px;
+    float: left;
     padding: 50px 50px;
     border: 1px solid rgba(49, 54, 57, 0.5);
     border-radius: 25px;
 }
 
-.card .back {
-    display: flex;
-    justify-content: space-between;
+.content .card h2 {
+    color: #313639;
 }
 
-.card .header {
-    display: flex;
-    justify-content: space-between;
+.content .card h3 {
+    color: #313639;
 }
 
-.card .actions {
-    margin-top: 50px;
-}
-
-.card .actions #dislike {
-    margin-left: 1em;
-}
-
-.card .commentSection .commentForm {
+.content .card p {
+    color: #313639;
     margin-top: 50px;
 }
 
@@ -52,19 +45,7 @@ a button {
     color: white;
     text-align: center;
     border: none;
-    padding: 0.5em 2em;
+    padding: 1em 3em;
     border-radius: 1em;
-    float: right;
-}
-
-a:link {
-	color: #313639;
-}
-
-a:visited {
-	color: #313639;
-}
-
-a:active {
-    color: #313639;
+    margin-top: 50px;
 }

@@ -14,9 +14,15 @@
     <?php include_once("nav.inc.php"); ?>
     
     <div class="content">
-        <h2>Groep: Voetballen in de wijk Heihoek</h2>
+        <div class="back">
+            <a href="groups.php" class="back"><i class="fas fa-arrow-left" style="color: #C78743;"></i></a>
+        </div>
+
         <br>
-        <p>Zie hier een overzicht van de deelnemers.</p>
+
+        <h2>Groep: Openluchtfitnesstoestellen</h2>
+        <br>
+        <p>Zie hier een overzicht van deelnemers die zich bij deze groep hebben aangesloten.</p>
     </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
-<?php include_once('logged_in.inc.php'); ?>
-<?php include_once('core/autoload.php'); ?>
-
 <?php
+    include_once('logged_in.inc.php');
+    include_once('core/autoload.php');
+
     if(!empty($_POST)) {
         try {
             $topic = new Topic();
@@ -54,6 +54,7 @@
                     <p><strong>Opgepast:</strong></p>
                     <?php if(isset($error)) { echo $error; }?>
                 </div>
+                <br>
             <?php endif; ?>
 
             <!-- titel -->

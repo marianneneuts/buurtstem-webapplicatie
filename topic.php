@@ -40,7 +40,7 @@
             <br>
 
             <div class="header">
-                <h2><?php echo htmlspecialchars($topic['title']); ?></h2>
+                <h2 style="color: #95C11F;"><?php echo htmlspecialchars($topic['title']); ?></h2>
 
                 <?php if($user['id'] === $topic['userId']): ?>
                     <a href="edit_topic.php?topic=<?php echo $topic['id']; ?>" class="edit"><i class="fa fa-edit" style="color: #C78743;"></i></a>
@@ -55,6 +55,10 @@
             <div class="actions">
                 <a href="" class="postAction <?php if(Like::isLiked($_GET['topic'], $user['id'])){ echo 'liked'; } ?>" id="like" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalLikes; ?> <i class="fa fa-thumbs-up" style="color: #C78743;"></i></a>
                 <a href="" class="postAction <?php if(Dislike::isDisliked($_GET['topic'], $user['id'])){ echo 'disliked'; } ?>" id="dislike" data-id="<?php echo $topic['id'] ?>" data-user="<?php echo $topic['userId'] ?>"><?php echo $totalDislikes; ?> <i class="fa fa-thumbs-down" style="color: #C78743;"></i></a>
+
+                <a href="groups.php">
+                    <button>Deelnemen</button>
+                </a>
             </div>
 
             <div class="commentSection">
@@ -71,9 +75,9 @@
                             <li>
                                 <div>
                                     <?php if($user['id'] === $topic['userId']): ?>
-                                        <h4 class="detailsText"><?php echo $commentUser['firstname'] ?> reageerde:</h4>
-                                    <?php else: ?>
                                         <h4 class="detailsText">Anoniem reageerde:</h4>
+                                    <?php else: ?>
+                                        <h4 class="detailsText"><?php echo $commentUser['firstname'] ?> reageerde:</h4>
                                     <?php endif; ?>
 
                                     <p><?php echo $comment['text'] ?></p>

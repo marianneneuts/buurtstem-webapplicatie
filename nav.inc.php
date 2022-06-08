@@ -31,6 +31,9 @@
                 <a href="groups.php" class="groups"><i class="fas fa-users" style="color: #C78743;"></i> Groepen</a>
             </li>
             <li>
+                <a href="service.php" class="service"><i class="fas fa-calendar-alt" style="color: #C78743;"></i> Dienstverlening</a>
+            </li>
+            <li>
                 <a href="logout.php" class="logout"><i class="fas fa-sign-out-alt" style="color: #C78743;"></i> Afmelden</a>
             </li>
         </ul>

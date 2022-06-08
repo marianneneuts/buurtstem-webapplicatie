@@ -17,10 +17,10 @@
         <h2>Mijn groepen</h2>
 
         <div class="card">
-            <h3>Voetballen in de wijk Heihoek</h3>
+            <h2>Openluchtfitnesstoestellen</h2>
             <br>
-            <a href="group_details.php">Groep bekijken</a>
-            <br>
+            <a href="group_details.php" style="text-decoration: underline; opacity: 0.5;"><h3>Groepsdeelnemers bekijken</h3></a>
+
             <a href="https://miro.com/nl/" target="_blank">
                 <button>Naar bord</button>
             </a>
