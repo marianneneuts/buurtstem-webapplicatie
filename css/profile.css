@@ -17,10 +17,12 @@
 }
 
 .content h2 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .content p {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
@@ -50,6 +52,7 @@
 }
 
 .header .personal h2, h3 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
@@ -76,6 +79,7 @@
 }
 
 .biography a button {
+    font-family: 'Arial Rounded MT', sans-serif;
     background-image: linear-gradient(#A9DB23, #82A81B);
     color: white;
     text-align: center;
@@ -85,13 +89,16 @@
 }
 
 a:link {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 a:visited {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 a:active {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }

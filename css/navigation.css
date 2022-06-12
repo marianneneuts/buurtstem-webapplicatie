@@ -10,6 +10,7 @@
 }
 
 body {
+	font-family: 'Arial Rounded MT', sans-serif;
 	background: #f5f6fa;
 }
 
@@ -29,10 +30,12 @@ body {
 }
 
 .wrapper .sidebar .home h2 a {
+	font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 .wrapper .sidebar ul li a {
+	font-family: 'Arial Rounded MT', sans-serif;
 	display: block;
 	margin-top: 0;
 	padding: 15px 30px;
@@ -42,6 +45,7 @@ body {
 
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active {
+	font-family: 'Arial Rounded MT', sans-serif;
 	color: #C78743;
 	background:white;
     border-right: 3px solid rgb(145, 181, 8);
@@ -60,12 +64,14 @@ body {
 }
 
 .wrapper .topbar ul li a {
+	font-family: 'Arial Rounded MT', sans-serif;
 	padding: 15px 30px;
 	color: #313639;
 	font-size: 16px;
 }
 
 .topbar .search-filter input[type=text] {
+	font-family: 'Arial Rounded MT', sans-serif;
 	width: 225px;
 	padding: 6px;
 	margin-left: 15px;
@@ -77,10 +83,12 @@ body {
 }
 
 .topbar .search-filter input[type=text]::placeholder {
+	font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 .topbar .search-filter input[type=text]:focus {
+	font-family: 'Arial Rounded MT', sans-serif;
 	border: 2px solid rgb(145, 181, 8);
 	border-radius: 50px;
 }

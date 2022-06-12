@@ -30,6 +30,8 @@
         <a href="buurtstem.php">
             <button>Buurtstem</button>
         </a>
+
+        <img src="images/card.png" alt="">
     </div>
 </body>
 </html>

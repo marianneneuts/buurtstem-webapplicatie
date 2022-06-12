@@ -12,6 +12,7 @@
 }
 
 .content h2 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
@@ -24,10 +25,12 @@
 }
 
 .content .card h2 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .content .card h3 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
@@ -42,13 +45,16 @@ a button {
 }
 
 a:link {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 a:visited {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 a:active {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }

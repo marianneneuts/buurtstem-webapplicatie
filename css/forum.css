@@ -12,6 +12,7 @@
 }
 
 .content h2 {
+	font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
@@ -52,13 +53,16 @@ table tr:first-child th:last-child {
 }
 
 a:link {
+	font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 a:visited {
+	font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 a:active {
+	font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
