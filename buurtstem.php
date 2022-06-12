@@ -30,6 +30,8 @@
         <a href="de_nieuwe_vesten.php">
             <button>De Nieuwe Vesten</button>
         </a>
+
+        <img src="images/logo.png" alt="">
     </div>
 </body>
 </html>

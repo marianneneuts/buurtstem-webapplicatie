@@ -12,6 +12,7 @@
 }
 
 .content h2 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
@@ -20,6 +21,7 @@
 }
 
 .form__field textarea {
+    font-family: 'Arial Rounded MT', sans-serif;
     padding: 1em 1em;
     border: 1px solid rgba(49, 54, 57, 0.5);
     border-radius: 1em;
@@ -28,6 +30,7 @@
 }
 
 .btn-bijwerken {
+    font-family: 'Arial Rounded MT', sans-serif;
     background-image: linear-gradient(#A9DB23, #82A81B);
     color: white;
     text-align: center;
@@ -41,13 +44,16 @@
 }
 
 a:link {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 a:visited {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
 
 a:active {
+    font-family: 'Arial Rounded MT', sans-serif;
 	color: #313639;
 }
