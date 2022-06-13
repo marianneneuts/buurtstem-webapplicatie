@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buurtstem - Groepen</title>
     <link rel="stylesheet" href="css/groups.css?v=<?php echo time(); ?>">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <?php include_once("nav.inc.php"); ?>

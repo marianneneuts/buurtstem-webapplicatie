@@ -12,10 +12,12 @@
 }
 
 .content h2 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .content p {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
@@ -28,19 +30,23 @@
 }
 
 .content .card h2 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .content .card h3 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .content .card p {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
     margin-top: 50px;
 }
 
 a button {
+    font-family: 'Arial Rounded MT', sans-serif;
     background-image: linear-gradient(#A9DB23, #82A81B);
     color: white;
     text-align: center;

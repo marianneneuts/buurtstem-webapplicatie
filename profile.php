@@ -1,6 +1,6 @@
 <?php
     include_once('logged_in.inc.php');
-    include_once('core/autoload.php');
+    include_once('bootstrap.php');
 
     $userId = $_GET["user"];
     $avatar = User::getAvatarById($userId);
@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buurtstem - Profiel</title>
     <link rel="stylesheet" href="css/profile.css?v=<?php echo time(); ?>">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <?php include_once("nav.inc.php"); ?>

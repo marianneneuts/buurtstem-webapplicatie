@@ -1,5 +1,5 @@
 <?php
-    include_once('core/autoload.php');
+    include_once('bootstrap.php');
     session_start();
 
     if(isset($_SESSION["loggedIn"])) {
@@ -35,6 +35,9 @@
     <!-- left side -->
     <div class="split left">
         <!-- Buurtstem logo -->
+        <h2 class="title">Buurtstem</h2>
+        <img class="image-front1" src="images/MaskGroup1.png" alt="">
+        <img class="image-front2" src="images/MaskGroup2.png" alt="">
     </div>
 
     <!-- right side -->

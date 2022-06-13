@@ -1,5 +1,5 @@
 <?php 
-    require_once('../core/autoload.php');
+    require_once('../bootstrap.php');
     session_start();
 
     if(!empty($_POST)){

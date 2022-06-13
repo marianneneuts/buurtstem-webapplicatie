@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buurtstem</title>
     <link rel="stylesheet" href="css/buurtstem.css?v=<?php echo time(); ?>">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <?php include_once("nav.inc.php"); ?>
@@ -30,6 +30,8 @@
         <a href="de_nieuwe_vesten.php">
             <button>De Nieuwe Vesten</button>
         </a>
+
+        <img src="images/logo.png" alt="">
     </div>
 </body>
 </html>

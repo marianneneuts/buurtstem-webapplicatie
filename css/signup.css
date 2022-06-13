@@ -39,10 +39,12 @@
 }
 
 h2 {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .sentence {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
@@ -78,17 +80,41 @@ h2 {
 }
 
 .login {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .login a:link {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .login a:active {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
 }
 
 .login a:visited {
+    font-family: 'Arial Rounded MT', sans-serif;
     color: #313639;
+}
+
+.title {
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 100px;
+    color: #D16014;
+}
+
+.image-front1 {
+    margin-left: -440px;
+    margin-top: 350px;
+    width: 350px;
+    height: 350px;
+}
+
+.image-front2 {
+    margin-top: 200px;
+    width: 400px;
+    height: 400px;
 }
