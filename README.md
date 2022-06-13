@@ -7,3 +7,9 @@ Op Buurtstem krijgen de buurtbewoners van de wijk Heihoek de ruimte om inspraak 
 [Marianne Neuts](https://github.com/marianneneuts)
 
 [Lauren Van Der Linden](https://github.com/LaurenVD)
+
+# Credentials
+
+Email: marianneneuts@gmail.com
+
+Wachtwoord: halloikbenMarianne
